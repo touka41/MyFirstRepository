@@ -1,0 +1,19 @@
+﻿body {
+
+}
+.logo {
+    height: 200px;
+    width: 200px;
+}
+.jumbotron {
+    background:none;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: -20px;
+}
+

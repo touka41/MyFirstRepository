@@ -8,9 +8,23 @@ namespace Stalwart.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "Hello World";
+            //var obj = new { Id = 1, Name = "Phils" };
+
+            //return View("AboutUs", obj);
+
+            //return View("~/TempView/Phils.cshtml");
+            return View();
+        }
+
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }

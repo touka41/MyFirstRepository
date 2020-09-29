@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Stalwart.Models.BookModel>
+@{
+    Layout = "_Layout";
+}
+
+<h1>All book list</h1>
+<button>Click me</button>
+@ViewData["Name"]   
+@if (ViewBag.datas != null)
+{
+    foreach (var items in ViewBag.datas)
+    {
+        <ul class="list-group">
+            <li class="list-group-item">@items.Id</li>
+            <li class="list-group-item">@items.Title</li>
+            <li class="list-group-item">@items.Author</li>
+        </ul>
+    } 
+}
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            //alert('sample');
+        })
+    </script>
+}
